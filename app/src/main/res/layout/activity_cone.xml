@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFB6C1"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="407dp"
+        android:layout_height="347dp"
+        android:layout_marginTop="1dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/cone" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="V=π(r*r)h"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <EditText
+        android:id="@+id/var1"
+        android:layout_width="189dp"
+        android:layout_height="44dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        app:layout_constraintBottom_toBottomOf="@+id/var2"
+        app:layout_constraintEnd_toStartOf="@+id/var2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/var2" />
+
+    <EditText
+        android:id="@+id/var2"
+        android:layout_width="189dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="69dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/var1"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="Radius"
+        android:textSize="24sp"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/var1"
+        app:layout_constraintEnd_toEndOf="@+id/var1"
+        app:layout_constraintStart_toStartOf="@+id/var1" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="Height"
+        android:textSize="24sp"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/var2"
+        app:layout_constraintEnd_toEndOf="@+id/var2"
+        app:layout_constraintStart_toStartOf="@+id/var2" />
+
+    <Button
+        android:id="@+id/calc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:text="Calculate"
+        app:backgroundTint="#DAF7A6"
+        app:layout_constraintEnd_toEndOf="@+id/var2"
+        app:layout_constraintStart_toStartOf="@+id/var1"
+        app:layout_constraintTop_toBottomOf="@+id/answer" />
+
+    <TextView
+        android:id="@+id/answer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="23dp"
+        android:textColor="@color/white"
+        android:text="The Volume of the cone is "
+        app:layout_constraintEnd_toEndOf="@+id/var2"
+        app:layout_constraintStart_toStartOf="@+id/var1"
+        app:layout_constraintTop_toBottomOf="@+id/var2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
